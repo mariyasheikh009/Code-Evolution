@@ -1,0 +1,48 @@
+/* Dark Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1D; /* aesthetic dark */
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Box Style */
+.box {
+    flex: 1;
+    padding: 45px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    color:48284A; /* dark text for pastel boxes */
+    font-weight: bold;
+}
+
+/* Matching Aesthetic Colors */
+.box1 {
+    background-color: #c9ada7; /* Blackberry Cream Rose */
+}
+
+.box2 {
+    background-color: #c9ada7; /* Pastel Petal Pink */
+}
+
+.box3 {
+    background-color: #c9ada7; /* Lavender Pastel */
+}
+
+/* Desktop View: Side by Side */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}

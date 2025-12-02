@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom right, #0b1c36, #1a2c4a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN FLOATING BOX */
+.main-box {
+    width: 80%;
+    height: 75%;
+    background: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    transition: 0.5s ease;
+}
+
+/* FLOATING EFFECT */
+.main-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+}
+
+/* LEFT SIDE (ABOUT ME) */
+.left {
+    width: 50%;
+    background: linear-gradient(to bottom, #0d1f3b, #102e5c);
+    color: #e8f3ff;
+    padding: 50px;
+}
+
+.left h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #a8d8ff;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* RIGHT SIDE (SKILLS + HOBBIES) */
+.right {
+    width: 50%;
+    background: #f7f7f7;
+    padding: 50px;
+    color: #2c2c2c;
+}
+
+.right h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2d3e50;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+/* BUTTON STYLE */
+.btn {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 20px;
+    background: #e9eef5;
+    border-radius: 25px;
+    border: 1px solid #cfd8e3;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #d2e7ff;
+    transform: scale(1.05);
+    color: #0b1c36;
+    border-color: #a8cfff;
+}
