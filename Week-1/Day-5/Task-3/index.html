@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-box">
+
+    <h1>Simple Calculator</h1>
+
+    <div class="field">
+        <label>Number 1</label>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <p class="error" id="err1"></p>
+    </div>
+
+    <div class="field">
+        <label>Number 2</label>
+        <input type="number" id="num2" placeholder="Enter second number">
+        <p class="error" id="err2"></p>
+    </div>
+
+    <div class="btn-row">
+        <button onclick="calculate('add')" class="btn">Add</button>
+        <button onclick="calculate('sub')" class="btn">Subtract</button>
+        <button onclick="calculate('mul')" class="btn">Multiply</button>
+        <button onclick="calculate('div')" class="btn">Divide</button>
+    </div>
+
+    <div class="result-box">
+        <h3>Result:-</h3>
+        <p id="result"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

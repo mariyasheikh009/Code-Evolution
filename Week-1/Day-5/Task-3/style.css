@@ -1,0 +1,116 @@
+/* OLIVE GREEN THEME */
+
+:root {
+    --bg: #f4f1e6;
+    --text: #3c3f2e;
+    --white: #ffffff;
+    --border: #c9c2a3;
+    --button: #8f9779;
+    --button-hover: #788065;
+    --error: #b14a4a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator Box */
+.calc-box {
+    width: 380px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 18px;
+    border: 2px solid var(--border);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.18),
+        0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: var(--text);
+}
+
+/* Fields */
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    margin-top: 6px;
+    font-size: 15px;
+    outline: none;
+    color: var(--text);
+    background: #faf9f4;
+}
+
+input:focus {
+    border-color: var(--button);
+    box-shadow: 0 0 5px rgba(143, 151, 121, 0.35);
+}
+
+.error {
+    color: var(--error);
+    font-size: 13px;
+    height: 14px;
+    margin-top: 4px;
+}
+
+/* Button Row */
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: var(--button);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eceadf;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+#result {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+}

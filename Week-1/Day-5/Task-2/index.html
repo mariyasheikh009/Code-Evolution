@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Form | Sky Blue Pro UI</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="form-box glass-effect">
+
+    <h1>Create Account</h1>
+
+    <form id="myForm" novalidate>
+
+        <!-- Name Field -->
+        <div class="field icon-field">
+            <label>Full Name</label>
+            <i class="fa-solid fa-user icon"></i>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p class="error" id="nameError"></p>
+        </div>
+
+        <!-- Email Field -->
+        <div class="field icon-field">
+            <label>Email Address</label>
+            <i class="fa-solid fa-envelope icon"></i>
+            <input type="email" id="email" placeholder="Enter your email">
+            <p class="error" id="emailError"></p>
+        </div>
+
+        <!-- Password Field -->
+        <div class="field icon-field">
+            <label>Password</label>
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <div class="pw-meter"><div id="pwBar" class="pw-bar"></div></div>
+
+            <p class="note">Use at least 8 characters.</p>
+            <p class="error" id="passError"></p>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="submit-btn" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit
+        </button>
+
+    </form>
+
+</div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast">Submitted Successfully ✔</div>
+
+<script src="script.js"></script>
+</body>
+</html>

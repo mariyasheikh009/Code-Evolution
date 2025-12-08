@@ -1,0 +1,170 @@
+/* FIXED ALIGNMENT VERSION */
+
+/* Theme Colors */
+:root {
+    --bg: #e8f3ff;
+    --text: #233a57;
+    --white: #ffffff;
+    --border: #b4cff2;
+    --primary: #5b8ecb;
+    --primary-hover: #4a78b0;
+    --error: #c0392b;
+    --glass: rgba(255,255,255,0.35);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM BOX */
+.form-box {
+    width: 380px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--border);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.18),
+        0 6px 12px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: var(--text);
+}
+
+/* FIELD CONTAINER */
+.field {
+    margin-bottom: 22px;
+    position: relative;  /* Very important */
+}
+
+/* LABEL */
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+}
+
+/* ICON INSIDE FIELD */
+.icon {
+    position: absolute;
+    top: 37px;            /* FIXED ALIGNMENT */
+    left: 12px;           /* FIXED LEFT POSITION */
+    font-size: 16px;
+    color: var(--primary);
+}
+
+/* INPUT BOX */
+input {
+    width: 100%;
+    padding: 12px 12px 12px 38px; /* Space for icon */
+    margin-top: 6px;
+
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    font-size: 15px;
+    color: var(--text);
+    outline: none;
+
+    box-sizing: border-box;   /* FIX alignment */
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 6px rgba(91, 142, 203, 0.35);
+}
+
+/* ERROR MESSAGE */
+.error {
+    font-size: 13px;
+    height: 16px;
+    color: var(--error);
+    margin-top: 5px; /* FIXED spacing */
+}
+
+/* PASSWORD METER */
+.pw-meter {
+    height: 7px;
+    width: 100%;
+    background: #d6e7ff;
+    border-radius: 10px;
+
+    margin-top: 10px; /* FIXED alignment */
+}
+
+.pw-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    border-radius: 10px;
+    transition: width 0.25s;
+}
+
+/* PASSWORD NOTE */
+.note {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #4a5b78;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.25s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    background: var(--primary);
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}

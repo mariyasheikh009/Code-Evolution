@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Designer - Premium UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="preview-box">
+        <h2>Text Preview</h2>
+        <p id="text">This is a beautifully styled interactive text editor!</p>
+    </div>
+
+    <div class="controls">
+
+        <div class="panel">
+            <h3>🎨 Text Color</h3>
+            <div class="group">
+                <button class="btn red" onclick="changeColor('red')">Red</button>
+                <button class="btn green" onclick="changeColor('green')">Green</button>
+                <button class="btn blue" onclick="changeColor('blue')">Blue</button>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>🅰 Font Family</h3>
+            <select class="dropdown" onchange="changeFont(this.value)">
+                <option value="Poppins">Poppins</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+        </div>
+
+        <div class="panel">
+            <h3>🔠 Font Size</h3>
+            <div class="group">
+                <button class="btn" onclick="increaseSize()">A+</button>
+                <button class="btn" onclick="decreaseSize()">A-</button>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>✨ Hover Effects</h3>
+            <div class="group">
+                <button id="boldBtn" class="btn">Bold</button>
+                <button id="italicBtn" class="btn">Italic</button>
+                <button id="underlineBtn" class="btn">Underline</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
