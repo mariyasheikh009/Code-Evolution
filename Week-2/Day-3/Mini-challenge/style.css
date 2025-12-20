@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #F8EDEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.outer-box {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(20, 39, 78, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+h1 {
+  color: #14274E;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #FFB5A7;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background: #FFB5A7;
+  color: #14274E;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.inner-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #FCD5CE;
+  min-height: 110px;
+  text-align: left;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+
+.loading {
+  background: #FDECEF;
+  color: #14274E;
+  animation: pulse 1s infinite;
+}
+
+.success {
+  background: #BEE1E6;
+  color: #0b4f6c;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.error {
+  background: #FEC5BB;
+  color: #9b2c2c;
+  animation: shake 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 1 — Fake API Visual</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- THEME SWITCH BUTTON -->
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <main class="page">
+    <div class="card">
+      <header class="card-header">
+        <h1>Fake API Call</h1>
+        <p class="subtitle">Simulate asynchronous flow with nice UI</p>
+      </header>
+
+      <section class="card-body">
+        <div id="output" class="output"></div>
+
+        <div class="controls">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </section>
+
+      <footer class="card-footer">
+        <small>Extension: nested timeout shows "Processing Data..." after data received.</small>
+      </footer>
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

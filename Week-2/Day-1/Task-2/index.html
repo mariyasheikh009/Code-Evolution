@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2 - Spread & Rest Operator</title>
+</head>
+<body>
+
+  
+
+  <div id="output"></div>
+
+  <script>
+    // 🔹 Spread Operator Example
+    const numbers1 = [1, 2, 3];
+    const numbers2 = [4, 5, 6];
+
+    const combinedArray = [...numbers1, ...numbers2];
+
+    function addNumbers(...nums) {
+      let sum = 0;
+      for (let num of nums) {
+        sum += num;
+      }
+      return sum;
+    }
+
+    const total = addNumbers(10, 20, 30);
+
+
+    console.log("Combined Array:", combinedArray);
+    console.log("Total using Rest Operator:", total);
+
+    
+  </script>
+
+</body>
+</html>

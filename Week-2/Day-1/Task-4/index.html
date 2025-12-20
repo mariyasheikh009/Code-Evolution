@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4 - ES6 Refactor</title>
+</head>
+<body>
+
+
+  <div id="output"></div>
+
+  <script>
+    
+    var studentName = "Mariya";
+    var marks = 85;
+
+    function getResult(name, marks) {
+      return "Student Name: " + name + ", Marks: " + marks;
+    }
+
+    var oldOutput = getResult(studentName, marks);
+
+    const student = "Mariya";
+    const score = 85;
+
+    const getResultES6 = (name, score) => {
+      return `Student Name: ${name}, Marks: ${score}`;
+    };
+
+    const newOutput = getResultES6(student, score);
+
+    console.log("Old Output:", oldOutput);
+    console.log("New ES6 Output:", newOutput);
+
+   
+  </script>
+
+</body>
+</html>

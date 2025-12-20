@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1 - Object Destructuring</title>
+</head>
+<body>
+
+  
+
+  <div id="output"></div>
+
+  <script>
+
+    const car = {
+      brand: "Tesla",
+      model: "Model 3",
+      color: "white"
+    };
+
+    const { brand, model } = car;
+
+    console.log("Brand:", brand);
+    console.log("Model:", model);
+
+    document.getElementById("output").innerHTML = `
+      <h2>Output:</h2>
+      <p><b>Brand:</b> ${brand}</p>
+      <p><b>Model:</b> ${model}</p>
+    `;
+  </script>
+
+</body>
+</html>

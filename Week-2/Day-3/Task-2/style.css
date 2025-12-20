@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.outer-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* shadow effect */
+}
+
+h1 {
+  color: #6C9375;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #6C9375;
+  color: #f6f1e7;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.inner-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f6f1e7;
+  min-height: 60px;
+  transition: all 0.5s ease;
+}
+
+.success {
+  background: #e6f4ea;
+  color: #2e7d32;
+  animation: fadeIn 1s ease-in;
+}
+
+.error {
+  background: #fde0e0;
+  color: #c62828;
+  animation: shake 0.5s;
+}
+
+.loading {
+  background: #fff3cd;
+  color: #856404;
+  animation: pulse 1s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
